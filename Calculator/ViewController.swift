@@ -35,25 +35,25 @@ class ViewController: UIViewController {
             previousNumber = Double(Outputs.text!)!
             if sender.tag == 18
             {
-                Outputs.text="/";
+                Outputs.text = String(Int(numberOnScreen))+"/";
                 //Outputs.text =  Outputs.text.append("/");
             }
             else if sender.tag == 17
             {
-                Outputs.text="x";
+                Outputs.text = String(Int(numberOnScreen))+"x";
             }
             else if sender.tag == 16
             {
-                Outputs.text="-";
+                Outputs.text=String(Int(numberOnScreen))+"-";
             }
             else if sender.tag == 15
             {
-                Outputs.text = "+";
+                Outputs.text = String(Int(numberOnScreen))+"+";
             }
             operation = sender.tag
             performingOperator = true;
         }else if sender.tag == 20{
-            
+            //Outputs.text = String(numberOnScreen) + "."
         }
         else if sender.tag == 19
         {
